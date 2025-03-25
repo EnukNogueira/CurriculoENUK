@@ -5,15 +5,15 @@ from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
 from reportlab.lib.units import inch
 
-# Criando o documento PDF
+# Criando o PDF
 doc = SimpleDocTemplate("Curriculo_Enuk.pdf", pagesize=letter)
 
-# Criando um estilo para o documento
+# Criando um estilo do PDF
 styles = getSampleStyleSheet()
 normal_style = styles['Normal']
 normal_style.fontName = 'Helvetica'
 normal_style.fontSize = 12
-normal_style.leading = 14  # Ajustando o espaçamento entre as linhas
+normal_style.leading = 14  
 
 # Estilo para os títulos
 heading_style = ParagraphStyle(
@@ -23,14 +23,14 @@ heading_style = ParagraphStyle(
     spaceAfter=12,
 )
 
-# Função para adicionar links clicáveis
+# Função para O hyperlink
 def add_link(c, x, y, text, url):
     c.setFont("Helvetica", 12)
     c.setFillColor(colors.blue)
     c.linkURL(url, (x, y, x + 200, y + 12))
     c.drawString(x, y, text)
 
-# Criando o conteúdo do currículo
+# Conteudo do curriculo
 content = []
 
 # Adicionando o nome e contato
@@ -38,13 +38,13 @@ content.append(Paragraph('ENUK DOS SANTOS ALVES NOGUEIRA', heading_style))
 content.append(Paragraph("Guarulhos, SP | (11) 97073-0434 | enuk.santos@gmail.com", normal_style))
 content.append(Spacer(1, 12))
 
-# Adicionando o LinkedIn com link clicável
+# Adicionando o LinkedIn 
 content.append(Paragraph("LinkedIn:", normal_style))
 content.append(Spacer(1, 6))  # Pequeno espaçamento
 content.append(Paragraph('<link href="https://www.linkedin.com/in/enuk-nogueira">https://www.linkedin.com/in/enuk-nogueira-35769b193/</link>', normal_style))
 content.append(Spacer(1, 12))
 
-# Adicionando o resumo profissional
+# Resumo profissional
 content.append(Paragraph('RESUMO PROFISSIONAL', heading_style))
 content.append(Paragraph(
     "Graduando em Engenharia de Software com experiência em documentação técnica, "
@@ -54,7 +54,7 @@ content.append(Paragraph(
     "contribuindo para projetos inovadores e eficientes.", normal_style))
 content.append(Spacer(1, 12))
 
-# Adicionando Formação Acadêmica
+# Formação Acadêmica
 content.append(Paragraph('FORMAÇÃO ACADÊMICA', heading_style))
 content.append(Paragraph("Engenharia de Software – Universidade Cruzeiro do Sul (08/2024 - 12/2026)", normal_style))
 content.append(Paragraph("Técnico em Administração – Universidade Eniac (02/2016 - 12/2017)", normal_style))
@@ -72,7 +72,7 @@ content.append(Paragraph("- Gestão de compras e controle de materiais elétrico
 content.append(Paragraph("- Suporte técnico e atendimento ao cliente interno.", normal_style))
 content.append(Spacer(1, 12))
 
-# Adicionando Habilidades e Competências
+# Habilidades e Competências
 content.append(Paragraph('HABILIDADES E COMPETÊNCIAS', heading_style))
 content.append(Paragraph("Linguagens de Programação: Python, C#, Java, HTML, CSS, JavaScript", normal_style))
 content.append(Paragraph("Desenvolvimento e Gestão: Controle de Documentação, Planejamento Estratégico, Gestão de Processos", normal_style))
@@ -80,7 +80,7 @@ content.append(Paragraph("Ferramentas: Jira, Excel Avançado, Power BI, AutoCAD"
 content.append(Paragraph("Infraestrutura e Redes: Redes e Protocolos de Comunicação (Básico)", normal_style))
 content.append(Spacer(1, 12))
 
-# Adicionando Certificações
+# Certificações
 content.append(Paragraph('CERTIFICAÇÕES', heading_style))
 content.append(Paragraph("Desenvolvimento Web Completo – Udemy", normal_style))
 content.append(Paragraph("Python Básico ao Avançado – Udemy", normal_style))
@@ -91,16 +91,16 @@ content.append(Paragraph("Desenho Técnico e Sistemas Eletrônicos Digitais – 
 content.append(Paragraph("Adobe Photoshop, Illustrator e Dreamweaver – Colégio Serrano Guardia", normal_style))
 content.append(Spacer(1, 12))
 
-# Adicionando Idiomas
+# Idiomas
 content.append(Paragraph('IDIOMAS', heading_style))
 content.append(Paragraph("Inglês: Intermediário (Leitura e escrita intermediária, conversação básica)", normal_style))
 content.append(Spacer(1, 12))
 
-# Adicionando Informações Adicionais
+# Informações Adicionais
 content.append(Paragraph('INFORMAÇÕES ADICIONAIS', heading_style))
 content.append(Paragraph("Interesse e aprendizado contínuo em TI, programação e desenvolvimento de sistemas.", normal_style))
 
-# Adicionando o conteúdo no documento PDF
+# Adicionando o conteúdo no PDF
 doc.build(content)
 
-print("PDF gerado com sucesso!")
+print("Curricculo Enuk PDF gerado com sucesso!")
