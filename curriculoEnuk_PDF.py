@@ -8,7 +8,7 @@ from reportlab.lib.units import inch
 # Criando o PDF
 doc = SimpleDocTemplate("Curriculo_Enuk.pdf", pagesize=letter)
 
-# Criando um estilo do PDF
+# Criando o estilo do PDF
 styles = getSampleStyleSheet()
 normal_style = styles['Normal']
 normal_style.fontName = 'Helvetica'
