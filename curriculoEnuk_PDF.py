@@ -103,4 +103,4 @@ content.append(Paragraph("Interesse e aprendizado contínuo em TI, programação
 # Adicionando o conteúdo no PDF
 doc.build(content)
 
-print("Curricculo Enuk PDF gerado com sucesso!")
+print("Curriculo Enuk PDF gerado com sucesso!")
