@@ -4,11 +4,11 @@ Bem-vindo ao meu perfil no GitHub! Sou graduando em Engenharia de Software, com 
 
 ## Sobre Mim
 
-- 🔭 Atualmente estou trabalhando em: Projetos JAVA
-- 🌱 Atualmente estou aprendendo: Engenharia de Software na Universidade Cruzeiro do Sul
-- 💬 Pergunte-me sobre: Desenvolvimento de software, gestão de processos e manutenção eletroeletrônica
-- 📫 Como chegar até mim: enuk.santos@gmail.com
-- ⚡ Curiosidade: Tenho experiência em administração, gestão de processos e manutenção eletroeletrônica
+-  Atualmente estou trabalhando em: Projetos JAVA
+-  Atualmente estou aprendendo: Engenharia de Software na Universidade Cruzeiro do Sul
+-  Pergunte-me sobre: Desenvolvimento de software, gestão de processos e manutenção eletroeletrônica
+-  Como chegar até mim: enuk.santos@gmail.com
+-  Curiosidade: Tenho experiência em administração, gestão de processos e manutenção eletroeletrônica
 
 ## Experiência Profissional
 
@@ -72,4 +72,4 @@ Aqui estão alguns dos projetos em que estou trabalhando atualmente ou em que tr
 
 Sinta-se à vontade para explorar meus repositórios e entrar em contato se tiver alguma pergunta ou ideia de colaboração!
 
-Obrigado por visitar meu perfil! 😊
+Obrigado por visitar meu perfil! 
